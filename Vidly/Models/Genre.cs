@@ -12,5 +12,11 @@ namespace Vidly.Models
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
+
+        public static readonly byte Action = 1;
+        public static readonly byte Comedy = 2;
+        public static readonly byte Family = 3;
+        public static readonly byte Romance = 4;
+
     }
 }
