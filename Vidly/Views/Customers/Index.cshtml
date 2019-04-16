@@ -52,10 +52,11 @@
 
                 ]
             });
+
             $("#customers").on("click", ".js-delete", function () {
                 var button = $(this);
                 bootbox.confirm("Are you sure you want to delete this customer?", function (result) {
-                    if (result) {
+                    if (result) {           
                         $.ajax({
                             url: "/API/Customers/" + button.attr("data-customer-id"),
                             method: "DELETE",
